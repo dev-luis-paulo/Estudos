@@ -1,4 +1,4 @@
-# Estudos: [2) Swift - Entendendo e praticando orientação a objetos](https://cursos.alura.com.br/course/swift-entendendo-praticando-orientacao-objetos)
+# [2) Swift - Entendendo e praticando orientação a objetos](https://cursos.alura.com.br/course/swift-entendendo-praticando-orientacao-objetos)
 
 Aula 1 - Structures e Classes
 
