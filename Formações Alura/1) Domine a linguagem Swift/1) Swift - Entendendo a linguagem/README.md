@@ -1,4 +1,4 @@
-# Estudos: [1) Swift - Entendendo a linguagem](https://cursos.alura.com.br/course/swift-entendendo-linguagem)
+# [1) Swift - Entendendo a linguagem](https://cursos.alura.com.br/course/swift-entendendo-linguagem)
 
 Aula 1 - Variáveis e tipos de dados
 
