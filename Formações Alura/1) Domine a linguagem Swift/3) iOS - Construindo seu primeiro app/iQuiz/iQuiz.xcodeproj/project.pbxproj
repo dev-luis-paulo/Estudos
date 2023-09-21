@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A003163E2ABCF3A40031C7C4 /* QuestaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A003163D2ABCF3A40031C7C4 /* QuestaoViewController.swift */; };
 		A044311E2ABBA5AF00A8E9C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A044311D2ABBA5AF00A8E9C0 /* AppDelegate.swift */; };
 		A04431202ABBA5AF00A8E9C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A044311F2ABBA5AF00A8E9C0 /* SceneDelegate.swift */; };
 		A04431222ABBA5AF00A8E9C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04431212ABBA5AF00A8E9C0 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A003163D2ABCF3A40031C7C4 /* QuestaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestaoViewController.swift; sourceTree = "<group>"; };
 		A044311A2ABBA5AF00A8E9C0 /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A044311D2ABBA5AF00A8E9C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A044311F2ABBA5AF00A8E9C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				A04431262ABBA5B000A8E9C0 /* Assets.xcassets */,
 				A04431282ABBA5B000A8E9C0 /* LaunchScreen.storyboard */,
 				A044312B2ABBA5B000A8E9C0 /* Info.plist */,
+				A003163D2ABCF3A40031C7C4 /* QuestaoViewController.swift */,
 			);
 			path = iQuiz;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 				A04431222ABBA5AF00A8E9C0 /* ViewController.swift in Sources */,
 				A044311E2ABBA5AF00A8E9C0 /* AppDelegate.swift in Sources */,
 				A04431202ABBA5AF00A8E9C0 /* SceneDelegate.swift in Sources */,
+				A003163E2ABCF3A40031C7C4 /* QuestaoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
