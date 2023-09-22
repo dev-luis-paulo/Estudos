@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		A003163E2ABCF3A40031C7C4 /* QuestaoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A003163D2ABCF3A40031C7C4 /* QuestaoViewController.swift */; };
+		A01F3ADB2ABE29D800DF58DB /* Questao.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F3ADA2ABE29D800DF58DB /* Questao.swift */; };
+		A01F3ADD2ABE3D3500DF58DB /* DesempenhoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F3ADC2ABE3D3500DF58DB /* DesempenhoViewController.swift */; };
+		A01F3AE22ABE4BD400DF58DB /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01F3AE12ABE4BD400DF58DB /* UIColor+.swift */; };
 		A044311E2ABBA5AF00A8E9C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A044311D2ABBA5AF00A8E9C0 /* AppDelegate.swift */; };
 		A04431202ABBA5AF00A8E9C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A044311F2ABBA5AF00A8E9C0 /* SceneDelegate.swift */; };
 		A04431222ABBA5AF00A8E9C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04431212ABBA5AF00A8E9C0 /* ViewController.swift */; };
@@ -18,6 +21,9 @@
 
 /* Begin PBXFileReference section */
 		A003163D2ABCF3A40031C7C4 /* QuestaoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestaoViewController.swift; sourceTree = "<group>"; };
+		A01F3ADA2ABE29D800DF58DB /* Questao.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questao.swift; sourceTree = "<group>"; };
+		A01F3ADC2ABE3D3500DF58DB /* DesempenhoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesempenhoViewController.swift; sourceTree = "<group>"; };
+		A01F3AE12ABE4BD400DF58DB /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		A044311A2ABBA5AF00A8E9C0 /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A044311D2ABBA5AF00A8E9C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A044311F2ABBA5AF00A8E9C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A01F3ADE2ABE49D600DF58DB /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A003163D2ABCF3A40031C7C4 /* QuestaoViewController.swift */,
+				A01F3ADC2ABE3D3500DF58DB /* DesempenhoViewController.swift */,
+				A04431212ABBA5AF00A8E9C0 /* ViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A01F3ADF2ABE4A6900DF58DB /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				A01F3ADA2ABE29D800DF58DB /* Questao.swift */,
+			);
+			path = Modelo;
+			sourceTree = "<group>";
+		};
+		A01F3AE02ABE4B9500DF58DB /* Extensões */ = {
+			isa = PBXGroup;
+			children = (
+				A01F3AE12ABE4BD400DF58DB /* UIColor+.swift */,
+			);
+			name = "Extensões";
+			path = "Extensões";
+			sourceTree = "<group>";
+		};
 		A04431112ABBA5AF00A8E9C0 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +91,15 @@
 		A044311C2ABBA5AF00A8E9C0 /* iQuiz */ = {
 			isa = PBXGroup;
 			children = (
+				A01F3AE02ABE4B9500DF58DB /* Extensões */,
+				A01F3ADF2ABE4A6900DF58DB /* Modelo */,
+				A01F3ADE2ABE49D600DF58DB /* ViewController */,
 				A044311D2ABBA5AF00A8E9C0 /* AppDelegate.swift */,
 				A044311F2ABBA5AF00A8E9C0 /* SceneDelegate.swift */,
-				A04431212ABBA5AF00A8E9C0 /* ViewController.swift */,
 				A04431232ABBA5AF00A8E9C0 /* Main.storyboard */,
 				A04431262ABBA5B000A8E9C0 /* Assets.xcassets */,
 				A04431282ABBA5B000A8E9C0 /* LaunchScreen.storyboard */,
 				A044312B2ABBA5B000A8E9C0 /* Info.plist */,
-				A003163D2ABCF3A40031C7C4 /* QuestaoViewController.swift */,
 			);
 			path = iQuiz;
 			sourceTree = "<group>";
@@ -144,7 +178,10 @@
 				A04431222ABBA5AF00A8E9C0 /* ViewController.swift in Sources */,
 				A044311E2ABBA5AF00A8E9C0 /* AppDelegate.swift in Sources */,
 				A04431202ABBA5AF00A8E9C0 /* SceneDelegate.swift in Sources */,
+				A01F3ADB2ABE29D800DF58DB /* Questao.swift in Sources */,
+				A01F3ADD2ABE3D3500DF58DB /* DesempenhoViewController.swift in Sources */,
 				A003163E2ABCF3A40031C7C4 /* QuestaoViewController.swift in Sources */,
+				A01F3AE22ABE4BD400DF58DB /* UIColor+.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
