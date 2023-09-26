@@ -11,9 +11,7 @@ class HomeTableViewHeader: UIView {
 
     @IBOutlet weak var tituloLabel: UILabel!
     
-    
     @IBOutlet weak var HeaderView: UIView!
-    
     
     @IBOutlet weak var BannerImageView: UIImageView!
     

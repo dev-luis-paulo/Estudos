@@ -38,15 +38,9 @@
                             <rect key="frame" x="0.0" y="0.0" width="200" height="130"/>
                             <color key="backgroundColor" red="0.31764705879999999" green="0.70196078429999997" blue="0.69411764710000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <color key="tintColor" red="0.31764705882352939" green="0.70196078431372544" blue="0.69411764705882351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="200" id="Uv2-5Z-4VQ"/>
-                            </constraints>
                         </view>
                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gdh-hW-fkJ">
                             <rect key="frame" x="199" y="0.0" width="176" height="130"/>
-                            <constraints>
-                                <constraint firstAttribute="width" constant="176" id="O6T-43-dgN"/>
-                            </constraints>
                         </imageView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -56,8 +50,10 @@
                         <constraint firstAttribute="trailing" secondItem="gdh-hW-fkJ" secondAttribute="trailing" id="Pre-gM-ucE"/>
                         <constraint firstAttribute="bottom" secondItem="8XD-uo-7Xq" secondAttribute="bottom" id="QQx-Mv-GpQ"/>
                         <constraint firstItem="gdh-hW-fkJ" firstAttribute="top" secondItem="Ptn-co-00E" secondAttribute="top" id="U8t-gN-iiD"/>
+                        <constraint firstItem="8XD-uo-7Xq" firstAttribute="width" secondItem="Ptn-co-00E" secondAttribute="width" multiplier="0.533333" id="VUB-hV-bLf"/>
                         <constraint firstItem="8XD-uo-7Xq" firstAttribute="leading" secondItem="Ptn-co-00E" secondAttribute="leading" id="iww-bL-KdP"/>
                         <constraint firstItem="8XD-uo-7Xq" firstAttribute="top" secondItem="Ptn-co-00E" secondAttribute="top" id="vM5-96-ezt"/>
+                        <constraint firstItem="gdh-hW-fkJ" firstAttribute="width" secondItem="Ptn-co-00E" secondAttribute="width" multiplier="0.469333" id="y4H-Cg-iGs"/>
                     </constraints>
                 </view>
             </subviews>
