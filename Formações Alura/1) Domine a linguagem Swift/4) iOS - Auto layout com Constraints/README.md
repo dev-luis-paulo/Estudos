@@ -15,3 +15,6 @@ Aula 6 - Tamanho de classes (size classes)
 ## Observações
 
 Na aula 5 foi adicionado alguns arquivos mocks dado através do curso. O JSON é então consumido para exibir os dados no app
+
+# Prévia do projeto
+![Prévia do projeto](aparenciaDoApp.png)
