@@ -12,10 +12,15 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        viagensTableView.dataSource = self
-        viagensTableView.delegate = self
+        configuraTableView()
         
         view.backgroundColor = UIColor(red: 30/255, green: 59/255, blue: 119/255, alpha: 1)
+    }
+    
+    func configuraTableView(){
+        viagensTableView.register(UINib(nibName: "ViagemTableViewCell", bundle: nil), forCellReuseIdentifier: "ViagemTableViewCell")
+        viagensTableView.dataSource = self
+        viagensTableView.delegate = self
     }
 }
 
@@ -29,20 +34,33 @@ extension ViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 300 //retorno da altura
+        return 300 //retorno da altura do header
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 400 //retorno da altura da celula que é 400, definido la no xib
     }
 }
 
 extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
+        return sessaoDeViagens?[section].numeroDeLinhas ?? 0 //verifica se tem valor se nao tiver coloca 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
+        //é interessante reutilizar as celulas, boa pratica usar reutilizacao
+        guard let celulaViagem = tableView.dequeueReusableCell(withIdentifier: "ViagemTableViewCell") as? ViagemTableViewCell else {
+            fatalError("erro ao criar ViagemTableViewlCell")
+        }
         
-        cell.textLabel?.text = "viagem \(indexPath.row)"
+        let viewModel = sessaoDeViagens?[indexPath.section]
         
-        return cell
+        switch viewModel?.tipo {
+        case .destaques:
+            celulaViagem.configuraCelula(viewModel?.viagens[indexPath.row])
+            return celulaViagem
+        default:
+            return UITableViewCell()
+        }
     }
 }
