@@ -38,7 +38,7 @@ extension ViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 400 //retorno da altura da celula que é 400, definido la no xib
+        return UIDevice.current.userInterfaceIdiom == UIUserInterfaceIdiom.phone ? 400 : 475 //retorno da altura da celula que é 400, definido la no xib
     }
 }
 
