@@ -118,8 +118,8 @@
 		A0F9EB8F2AC6416D006BE569 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				A08BE9DA2ACB6A7E00C12EF4 /* Oferta */,
 				A08BE9D92ACB6A6800C12EF4 /* Destaque */,
+				A08BE9DA2ACB6A7E00C12EF4 /* Oferta */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
