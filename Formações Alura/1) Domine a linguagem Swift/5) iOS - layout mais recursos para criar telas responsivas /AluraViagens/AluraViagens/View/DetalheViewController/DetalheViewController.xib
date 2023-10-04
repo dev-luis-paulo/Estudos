@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetalheViewController" customModule="AluraViagens" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="u5b-ru-MYI">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FOE-Wn-Lr3">
+                            <rect key="frame" x="0.0" y="0.0" width="385" height="1000"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGK-9q-jBv">
+                                    <rect key="frame" x="0.0" y="0.0" width="385" height="200"/>
+                                    <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="M6N-JL-Yva"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iLN-U6-NPA">
+                                    <rect key="frame" x="0.0" y="200" width="385" height="200"/>
+                                    <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="ENd-gk-i8w"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMt-8C-GO5">
+                                    <rect key="frame" x="0.0" y="400" width="385" height="200"/>
+                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="v39-oW-1bW"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Inm-fT-tRy">
+                                    <rect key="frame" x="0.0" y="600" width="385" height="200"/>
+                                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="1b4-B1-cTX"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8lM-82-42J">
+                                    <rect key="frame" x="0.0" y="800" width="385" height="200"/>
+                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="qSY-KV-hug"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="FOE-Wn-Lr3" secondAttribute="trailing" id="3Sh-W5-3d7"/>
+                        <constraint firstItem="FOE-Wn-Lr3" firstAttribute="leading" secondItem="u5b-ru-MYI" secondAttribute="leading" id="84h-ik-UVy"/>
+                        <constraint firstAttribute="bottom" secondItem="FOE-Wn-Lr3" secondAttribute="bottom" id="Cmu-vx-VZ6"/>
+                        <constraint firstItem="FOE-Wn-Lr3" firstAttribute="top" secondItem="u5b-ru-MYI" secondAttribute="top" id="ReR-fK-5W2"/>
+                        <constraint firstItem="FOE-Wn-Lr3" firstAttribute="width" secondItem="u5b-ru-MYI" secondAttribute="width" multiplier="0.979644" id="g6X-u9-bKS"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="u5b-ru-MYI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2bm-6U-g9G"/>
+                <constraint firstAttribute="bottom" secondItem="u5b-ru-MYI" secondAttribute="bottom" id="CUE-s3-iK9"/>
+                <constraint firstAttribute="trailing" secondItem="u5b-ru-MYI" secondAttribute="trailing" id="GXH-IG-P4d"/>
+                <constraint firstItem="u5b-ru-MYI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UNb-zq-e8f"/>
+            </constraints>
+            <point key="canvasLocation" x="130.53435114503816" y="-11.267605633802818"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

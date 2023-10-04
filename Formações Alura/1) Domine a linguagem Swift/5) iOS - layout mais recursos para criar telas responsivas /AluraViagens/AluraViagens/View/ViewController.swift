@@ -26,6 +26,12 @@ class ViewController: UIViewController {
 }
 
 extension ViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detalheController = DetalheViewController(nibName: "DetalheViewController", bundle: nil)
+        navigationController?.pushViewController(detalheController, animated: true)
+    }
+    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         //só cria o header na pos0, senao pra cada sessao vai criar um header
         if section == 0 {
