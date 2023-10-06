@@ -10,10 +10,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DetalheViewController" customModule="AluraViagens" customModuleProvider="target">
             <connections>
-                <outlet property="backButton" destination="dDB-VT-FCb" id="CIB-eI-zsW"/>
-                <outlet property="subtituloViagemLabel" destination="liK-hP-l7L" id="83P-tP-1k2"/>
-                <outlet property="tituloViagemLabel" destination="sIm-AI-keM" id="bgF-vl-KPj"/>
-                <outlet property="viagemImage" destination="KWO-BU-ISp" id="6dT-Yw-odl"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -25,18 +21,16 @@
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="u5b-ru-MYI">
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Eb-a1-6Pt" userLabel="Image Viagem View">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="235"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="FOE-Wn-Lr3">
+                            <rect key="frame" x="0.0" y="0.0" width="385" height="1000"/>
                             <subviews>
-                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cancun-internacional" translatesAutoresizingMaskIntoConstraints="NO" id="KWO-BU-ISp">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="235"/>
-                                </imageView>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dDB-VT-FCb">
-                                    <rect key="frame" x="10" y="55" width="25" height="25"/>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jGK-9q-jBv">
+                                    <rect key="frame" x="0.0" y="0.0" width="385" height="200"/>
+                                    <color key="backgroundColor" systemColor="systemCyanColor"/>
                                     <constraints>
-                                        <constraint firstAttribute="width" constant="25" id="B6X-jz-9f3"/>
-                                        <constraint firstAttribute="height" constant="25" id="apW-rC-zyw"/>
+                                        <constraint firstAttribute="height" constant="200" id="M6N-JL-Yva"/>
                                     </constraints>
+<<<<<<< HEAD
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" image="icon_back"/>
                                     <connections>
@@ -208,21 +202,46 @@
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="10" id="UTi-b1-uJs"/>
+=======
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iLN-U6-NPA">
+                                    <rect key="frame" x="0.0" y="200" width="385" height="200"/>
+                                    <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="ENd-gk-i8w"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bMt-8C-GO5">
+                                    <rect key="frame" x="0.0" y="400" width="385" height="200"/>
+                                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="v39-oW-1bW"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Inm-fT-tRy">
+                                    <rect key="frame" x="0.0" y="600" width="385" height="200"/>
+                                    <color key="backgroundColor" systemColor="systemRedColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="1b4-B1-cTX"/>
+                                    </constraints>
+                                </view>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8lM-82-42J">
+                                    <rect key="frame" x="0.0" y="800" width="385" height="200"/>
+                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="200" id="qSY-KV-hug"/>
+>>>>>>> parent of 9f3020c (adicao aula 4)
                                     </constraints>
                                 </view>
                             </subviews>
                         </stackView>
                     </subviews>
                     <constraints>
-                        <constraint firstAttribute="bottom" secondItem="lrJ-6N-szJ" secondAttribute="bottom" id="BS0-Zt-HTW"/>
-                        <constraint firstAttribute="trailing" secondItem="1Eb-a1-6Pt" secondAttribute="trailing" id="Cqg-yx-jw3"/>
-                        <constraint firstItem="lrJ-6N-szJ" firstAttribute="top" secondItem="1Eb-a1-6Pt" secondAttribute="bottom" id="DzU-gq-ctK"/>
-                        <constraint firstItem="1Eb-a1-6Pt" firstAttribute="height" secondItem="u5b-ru-MYI" secondAttribute="height" multiplier="0.275822" id="Em6-EE-Oyf"/>
-                        <constraint firstItem="1Eb-a1-6Pt" firstAttribute="top" secondItem="u5b-ru-MYI" secondAttribute="top" id="Hl7-Me-f7T"/>
-                        <constraint firstItem="1Eb-a1-6Pt" firstAttribute="width" secondItem="u5b-ru-MYI" secondAttribute="width" id="Lde-OA-g9E"/>
-                        <constraint firstItem="1Eb-a1-6Pt" firstAttribute="leading" secondItem="u5b-ru-MYI" secondAttribute="leading" id="jFg-5e-lLY"/>
-                        <constraint firstAttribute="trailing" secondItem="lrJ-6N-szJ" secondAttribute="trailing" constant="16" id="mhA-HE-ECj"/>
-                        <constraint firstItem="lrJ-6N-szJ" firstAttribute="leading" secondItem="u5b-ru-MYI" secondAttribute="leading" constant="16" id="nrM-vL-0Uf"/>
+                        <constraint firstAttribute="trailing" secondItem="FOE-Wn-Lr3" secondAttribute="trailing" id="3Sh-W5-3d7"/>
+                        <constraint firstItem="FOE-Wn-Lr3" firstAttribute="leading" secondItem="u5b-ru-MYI" secondAttribute="leading" id="84h-ik-UVy"/>
+                        <constraint firstAttribute="bottom" secondItem="FOE-Wn-Lr3" secondAttribute="bottom" id="Cmu-vx-VZ6"/>
+                        <constraint firstItem="FOE-Wn-Lr3" firstAttribute="top" secondItem="u5b-ru-MYI" secondAttribute="top" id="ReR-fK-5W2"/>
+                        <constraint firstItem="FOE-Wn-Lr3" firstAttribute="width" secondItem="u5b-ru-MYI" secondAttribute="width" multiplier="0.979644" id="g6X-u9-bKS"/>
                     </constraints>
                 </scrollView>
             </subviews>
@@ -237,11 +256,28 @@
         </view>
     </objects>
     <resources>
+<<<<<<< HEAD
         <image name="cancun-internacional" width="1280" height="778"/>
         <image name="icon-sol" width="50" height="50"/>
         <image name="icon_back" width="50" height="50"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+=======
+        <systemColor name="systemBrownColor">
+            <color red="0.63529411759999999" green="0.51764705879999995" blue="0.36862745099999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.1960784314" green="0.67843137249999996" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+>>>>>>> parent of 9f3020c (adicao aula 4)
         </systemColor>
         <systemColor name="systemGray5Color">
             <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
