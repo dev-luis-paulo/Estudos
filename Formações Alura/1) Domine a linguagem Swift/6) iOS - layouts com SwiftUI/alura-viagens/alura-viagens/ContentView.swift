@@ -9,15 +9,38 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack{
-            Text("Alura Viagens")
-            Text("Especial")
-            Text("Brasil")
-            
-            List{
-                Text("Rio de Janeiro")
-                Text("Ceará")
-                Text("Atibaia")
+        
+        
+        GeometryReader { view in
+            // Vstack principal
+            VStack {
+                //VStack Header
+                VStack {
+                    Text("Alura Viagens")
+                        .foregroundColor(Color.white)
+                        .font(.custom("Avenir Black", size: 20))
+                        .padding(.top, 60)
+                    Text("Especial")
+                        .foregroundColor(Color.white)
+                        .font(.custom("Avenir Book", size: 20))
+                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading, 30)
+                    Text("Brasil")
+                        .foregroundColor(Color.white)
+                        .font(.custom("Avenir Black", size: 23))
+                        .frame(minWidth: 0, maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading, 30)
+                }
+                //utiliza o objeto geometryReader
+                .frame(width: view.size.width, height: 180, alignment: .top)
+                .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.purple/*@END_MENU_TOKEN@*/)
+                .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                
+                List{
+                    Text("Rio de Janeiro")
+                    Text("Ceará")
+                    Text("Atibaia")
+                }
             }
         }
     }
