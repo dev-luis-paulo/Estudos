@@ -16,6 +16,7 @@
 		A028E8B92AD5EF700075B2CB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A028E8B82AD5EF700075B2CB /* ContentView.swift */; };
 		A028E8BB2AD5EF710075B2CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A028E8BA2AD5EF710075B2CB /* Assets.xcassets */; };
 		A028E8BE2AD5EF710075B2CB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A028E8BD2AD5EF710075B2CB /* Preview Assets.xcassets */; };
+		A08E688F2ADF21E9008B6EBF /* MapaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08E688E2ADF21E9008B6EBF /* MapaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		A028E8B82AD5EF700075B2CB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A028E8BA2AD5EF710075B2CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A028E8BD2AD5EF710075B2CB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A08E688E2ADF21E9008B6EBF /* MapaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				A028E8B82AD5EF700075B2CB /* ContentView.swift */,
 				A02113632AD9F0BE002ED9DA /* HeaderView.swift */,
 				A02113652AD9F291002ED9DA /* CelulaViagemView.swift */,
+				A08E688E2ADF21E9008B6EBF /* MapaView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A02113642AD9F0BE002ED9DA /* HeaderView.swift in Sources */,
+				A08E688F2ADF21E9008B6EBF /* MapaView.swift in Sources */,
 				A02113602AD9ED16002ED9DA /* Viagem.swift in Sources */,
 				A028E8B92AD5EF700075B2CB /* ContentView.swift in Sources */,
 				A021135F2AD9ED16002ED9DA /* Dados.swift in Sources */,
