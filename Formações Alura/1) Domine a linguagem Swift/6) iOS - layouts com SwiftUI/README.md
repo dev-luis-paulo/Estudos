@@ -17,8 +17,12 @@ Na prévia abaixo é possível ver o funcionamento do app, há a view principal 
 Esse projeto também é responsivo com iPad, para isso foi utilizado size class
 
 # Prévia do projeto
+Iphone Principal
 ![iPhone 15 pro - principal](iphonePrincipal.png)
+Iphone Celula
 ![iPhone 15 pro - celula](iphoneCelula.png)
 
+iPad Principal
 ![iPad - principal](iPadPrincipal.png)
+iPad Celula
 ![iPad - celula](iPadCelula.png)
