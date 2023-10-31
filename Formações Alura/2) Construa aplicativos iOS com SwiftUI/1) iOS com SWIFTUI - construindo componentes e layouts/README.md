@@ -14,9 +14,7 @@ Aula 6 - criando a lista de lojas
 
 ## Observações
 
-Na prévia abaixo é possível ver o funcionamento do app, há a view principal e quando é clicado na célula abre um mapa com a localização.
-
-Esse projeto também é responsivo com iPad, para isso foi utilizado size class
+Na prévia abaixo é possível ver o funcionamento do app
 
 # Prévia do projeto
 ![Prévia do projeto](chefDelivery.png)
