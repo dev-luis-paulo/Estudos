@@ -9,6 +9,7 @@ O projeto deve ser executado através da IDE xcode e buildado através da tecla 
 ## Informações
 - Interface: UIKit (View Code)
 - Linguagem: Swift
+- [Figma](https://www.figma.com/file/OczdlZrkU7Z7DyYLLDoiPo/App-Tempo?node-id=0%3A1&mode=dev)
 
 ## Aulas
 
@@ -22,3 +23,8 @@ O projeto deve ser executado através da IDE xcode e buildado através da tecla 
 - Configurando o projeto sem storyboard
 - Introdução ao ViewCode
 - Autolayout
+
+### [Aula 3](https://www.youtube.com/watch?v=SLE5tKnFGFY)
+- Hierarquia
+- Construindo componentes customizados
+- Entendendo o recurso de Assets do Xcode
