@@ -9,13 +9,10 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let corDeFundo = "background"
-    let corPrincipal = "primaryColor"
-    
     //Só é inicializada quando for referenciada (Maior eficiencia, pois não está alocada na memória)
     private lazy var backgroundView: UIImageView = {
         let imageView = UIImageView(frame: .zero)
-        imageView.image = UIImage(named: corDeFundo)
+        imageView.image = UIImage(named: "background")
         imageView.contentMode = .scaleAspectFill
         imageView.translatesAutoresizingMaskIntoConstraints = false
         
@@ -25,7 +22,7 @@ class ViewController: UIViewController {
     private lazy var headerView: UIView = {
         let view = UIView(frame: .zero)
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.backgroundColor = UIColor(named: "contrastColor")
+        view.backgroundColor = UIColor.contrastColor
         view.layer.cornerRadius = 20
         
         return view
@@ -37,7 +34,7 @@ class ViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 20)
         label.text = "Rio de Janeiro"
         label.textAlignment = .center
-        label.textColor = UIColor(named: corPrincipal)
+        label.textColor = UIColor.corPrincipal
         
         return label
     }()
@@ -48,7 +45,7 @@ class ViewController: UIViewController {
         label.font = UIFont.systemFont(ofSize: 70, weight: .bold)
         label.text = "25ºC"
         label.textAlignment = .left
-        label.textColor = UIColor(named: corPrincipal)
+        label.textColor = UIColor.corPrincipal
         
         return label
     }()
@@ -67,7 +64,7 @@ class ViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Umidade"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
-        label.textColor = UIColor(named: "contrastColor")
+        label.textColor = UIColor.contrastColor
         
         return label
     }()
@@ -77,7 +74,7 @@ class ViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "1000mm"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
-        label.textColor = UIColor(named: "contrastColor")
+        label.textColor = UIColor.contrastColor
         
         return label
     }()
@@ -95,7 +92,7 @@ class ViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Vento"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
-        label.textColor = UIColor(named: "contrastColor")
+        label.textColor = UIColor.contrastColor
         
         return label
     }()
@@ -105,7 +102,7 @@ class ViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "10km/h"
         label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
-        label.textColor = UIColor(named: "contrastColor")
+        label.textColor = UIColor.contrastColor
         
         return label
     }()
@@ -123,12 +120,38 @@ class ViewController: UIViewController {
         stackView.axis = .vertical
         stackView.translatesAutoresizingMaskIntoConstraints = false
         stackView.spacing = 3
-        stackView.backgroundColor = UIColor(named: "softGray")
+        stackView.backgroundColor = UIColor.cinzaClaro
         stackView.layer.cornerRadius = 10
         stackView.isLayoutMarginsRelativeArrangement = true
         stackView.directionalLayoutMargins = NSDirectionalEdgeInsets(top: 12, leading: 24, bottom: 12, trailing: 24)
         
         return stackView
+    }()
+    
+    private lazy var previsaoLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = UIFont.systemFont(ofSize: 12, weight: .semibold)
+        label.text = "PREVISÃO POR HORA"
+        label.textAlignment = .center
+        label.textColor = UIColor.contrastColor
+        
+        return label
+    }()
+    
+    private lazy var previsaoCollectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.scrollDirection = .horizontal
+        layout.itemSize = CGSize(width: 67, height: 84)
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+        
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        collectionView.backgroundColor = .clear
+        collectionView.dataSource = self
+        collectionView.register(previsaoCollectionViewCell.self, forCellWithReuseIdentifier: previsaoCollectionViewCell.indentifier)
+        
+        return collectionView
     }()
 
     override func viewDidLoad() {
@@ -146,6 +169,8 @@ class ViewController: UIViewController {
         view.addSubview(backgroundView)
         view.addSubview(headerView)
         view.addSubview(statsStackView)
+        view.addSubview(previsaoLabel)
+        view.addSubview(previsaoCollectionView)
         
         headerView.addSubview(cityLabel)
         headerView.addSubview(temperatureLabel)
@@ -187,6 +212,27 @@ class ViewController: UIViewController {
             statsStackView.widthAnchor.constraint(equalToConstant: 206),
             statsStackView.centerXAnchor.constraint(equalTo: view.centerXAnchor)
         ])
+        
+        NSLayoutConstraint.activate([
+            previsaoLabel.topAnchor.constraint(equalTo: statsStackView.bottomAnchor, constant: 29),
+            previsaoLabel.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 35),
+            previsaoLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -35),
+            previsaoCollectionView.topAnchor.constraint(equalTo: previsaoLabel.bottomAnchor, constant: 22),
+            previsaoCollectionView.heightAnchor.constraint(equalToConstant: 84),
+            previsaoCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor),
+            previsaoCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor)
+        ])
     }
 }
 
+extension ViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 10
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: previsaoCollectionViewCell.indentifier, for: indexPath)
+        
+        return cell
+    }
+}

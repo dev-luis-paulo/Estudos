@@ -28,3 +28,9 @@ O projeto deve ser executado através da IDE xcode e buildado através da tecla 
 - Hierarquia
 - Construindo componentes customizados
 - Entendendo o recurso de Assets do Xcode
+
+### [Aula 4](https://www.youtube.com/watch?v=mJeJ6PxblaE)
+- StackView (Vertical e horizontal)
+
+### [Aula 5](https://www.youtube.com/watch?v=-IMszhbAIBs)
+- CollectionView
