@@ -34,3 +34,6 @@ O projeto deve ser executado através da IDE xcode e buildado através da tecla 
 
 ### [Aula 5](https://www.youtube.com/watch?v=-IMszhbAIBs)
 - CollectionView
+
+### [Aula 6](https://www.youtube.com/watch?v=uGRkFe6ROhM)
+- UIStackView

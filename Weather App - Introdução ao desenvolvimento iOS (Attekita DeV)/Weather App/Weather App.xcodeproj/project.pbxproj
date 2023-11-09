@@ -12,6 +12,9 @@
 		A001DEA42AF1124D00DD51E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A001DEA32AF1124D00DD51E4 /* ViewController.swift */; };
 		A001DEA92AF1124E00DD51E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A001DEA82AF1124E00DD51E4 /* Assets.xcassets */; };
 		A001DEAC2AF1124E00DD51E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A001DEAA2AF1124E00DD51E4 /* LaunchScreen.storyboard */; };
+		A016BE5A2AFC44FE00DE23BB /* DailyForecastTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A016BE592AFC44FE00DE23BB /* DailyForecastTableViewCell.swift */; };
+		A016BE5C2AFC4C2400DE23BB /* UIView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A016BE5B2AFC4C2400DE23BB /* UIView+Extensions.swift */; };
+		A0A9DDC22AFD88A700117D61 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9DDC12AFD88A700117D61 /* Service.swift */; };
 		A0D319802AFAEA830024594B /* previsaoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3197F2AFAEA830024594B /* previsaoCollectionViewCell.swift */; };
 		A0D319822AFAEEFA0024594B /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D319812AFAEEFA0024594B /* Color+Extensions.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +27,9 @@
 		A001DEA82AF1124E00DD51E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A001DEAB2AF1124E00DD51E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A001DEAD2AF1124E00DD51E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A016BE592AFC44FE00DE23BB /* DailyForecastTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecastTableViewCell.swift; sourceTree = "<group>"; };
+		A016BE5B2AFC4C2400DE23BB /* UIView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extensions.swift"; sourceTree = "<group>"; };
+		A0A9DDC12AFD88A700117D61 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		A0D3197F2AFAEA830024594B /* previsaoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = previsaoCollectionViewCell.swift; sourceTree = "<group>"; };
 		A0D319812AFAEEFA0024594B /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -61,11 +67,14 @@
 				A001DE9F2AF1124D00DD51E4 /* AppDelegate.swift */,
 				A001DEA12AF1124D00DD51E4 /* SceneDelegate.swift */,
 				A0D319812AFAEEFA0024594B /* Color+Extensions.swift */,
+				A016BE5B2AFC4C2400DE23BB /* UIView+Extensions.swift */,
 				A001DEA32AF1124D00DD51E4 /* ViewController.swift */,
 				A0D3197F2AFAEA830024594B /* previsaoCollectionViewCell.swift */,
+				A016BE592AFC44FE00DE23BB /* DailyForecastTableViewCell.swift */,
 				A001DEA82AF1124E00DD51E4 /* Assets.xcassets */,
 				A001DEAA2AF1124E00DD51E4 /* LaunchScreen.storyboard */,
 				A001DEAD2AF1124E00DD51E4 /* Info.plist */,
+				A0A9DDC12AFD88A700117D61 /* Service.swift */,
 			);
 			path = "Weather App";
 			sourceTree = "<group>";
@@ -140,8 +149,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A016BE5C2AFC4C2400DE23BB /* UIView+Extensions.swift in Sources */,
+				A0A9DDC22AFD88A700117D61 /* Service.swift in Sources */,
 				A0D319822AFAEEFA0024594B /* Color+Extensions.swift in Sources */,
 				A001DEA42AF1124D00DD51E4 /* ViewController.swift in Sources */,
+				A016BE5A2AFC44FE00DE23BB /* DailyForecastTableViewCell.swift in Sources */,
 				A001DEA02AF1124D00DD51E4 /* AppDelegate.swift in Sources */,
 				A0D319802AFAEA830024594B /* previsaoCollectionViewCell.swift in Sources */,
 				A001DEA22AF1124D00DD51E4 /* SceneDelegate.swift in Sources */,
