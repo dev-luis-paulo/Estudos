@@ -17,6 +17,7 @@
 		A0A9DDC22AFD88A700117D61 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A9DDC12AFD88A700117D61 /* Service.swift */; };
 		A0D319802AFAEA830024594B /* previsaoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D3197F2AFAEA830024594B /* previsaoCollectionViewCell.swift */; };
 		A0D319822AFAEEFA0024594B /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D319812AFAEEFA0024594B /* Color+Extensions.swift */; };
+		A0DD44822B00428400F105C7 /* Core+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0DD44812B00428400F105C7 /* Core+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		A0A9DDC12AFD88A700117D61 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		A0D3197F2AFAEA830024594B /* previsaoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = previsaoCollectionViewCell.swift; sourceTree = "<group>"; };
 		A0D319812AFAEEFA0024594B /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		A0DD44812B00428400F105C7 /* Core+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Core+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				A001DEA12AF1124D00DD51E4 /* SceneDelegate.swift */,
 				A0D319812AFAEEFA0024594B /* Color+Extensions.swift */,
 				A016BE5B2AFC4C2400DE23BB /* UIView+Extensions.swift */,
+				A0DD44812B00428400F105C7 /* Core+Extensions.swift */,
 				A001DEA32AF1124D00DD51E4 /* ViewController.swift */,
 				A0D3197F2AFAEA830024594B /* previsaoCollectionViewCell.swift */,
 				A016BE592AFC44FE00DE23BB /* DailyForecastTableViewCell.swift */,
@@ -153,6 +156,7 @@
 				A0A9DDC22AFD88A700117D61 /* Service.swift in Sources */,
 				A0D319822AFAEEFA0024594B /* Color+Extensions.swift in Sources */,
 				A001DEA42AF1124D00DD51E4 /* ViewController.swift in Sources */,
+				A0DD44822B00428400F105C7 /* Core+Extensions.swift in Sources */,
 				A016BE5A2AFC44FE00DE23BB /* DailyForecastTableViewCell.swift in Sources */,
 				A001DEA02AF1124D00DD51E4 /* AppDelegate.swift in Sources */,
 				A0D319802AFAEA830024594B /* previsaoCollectionViewCell.swift in Sources */,

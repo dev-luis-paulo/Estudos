@@ -10,6 +10,7 @@ O projeto deve ser executado através da IDE xcode e buildado através da tecla 
 - Interface: UIKit (View Code)
 - Linguagem: Swift
 - [Figma](https://www.figma.com/file/OczdlZrkU7Z7DyYLLDoiPo/App-Tempo?node-id=0%3A1&mode=dev)
+- API: [WeatherAPI](https://openweathermap.org)
 
 ## Aulas
 
@@ -37,3 +38,9 @@ O projeto deve ser executado através da IDE xcode e buildado através da tecla 
 
 ### [Aula 6](https://www.youtube.com/watch?v=uGRkFe6ROhM)
 - UIStackView
+
+### [Aula 7](https://youtu.be/b9zcU6ol_7U?si=ED0bYYd34UfjH7pa)
+- Integração com API
+
+## Prévia do projeto
+![Prévia do projeto](aparenciaAPP.png)

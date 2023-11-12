@@ -172,13 +172,14 @@ class ViewController: UIViewController {
         tableView.translatesAutoresizingMaskIntoConstraints = false
         tableView.backgroundColor = .clear
         tableView.dataSource = self
+        tableView.delegate = self
         tableView.register(DailyForecastTableViewCell.self, forCellReuseIdentifier: DailyForecastTableViewCell.identifier)
         
         return tableView
     }()
     
     private let service = Service()
-    private var city = City(lat: "-23.6814346", lon: "-46.9249599", name: "São Paulo")
+    private var city = City(lat: "-22.8787", lon: "-42.0199", name: "Cabo Frio")
     private var forecastResponse: ForecastResponse?
 
     override func viewDidLoad() {
@@ -200,10 +201,23 @@ class ViewController: UIViewController {
     private func loadData() {
         cityLabel.text = city.name
         
-        temperatureLabel.text = "\(forecastResponse?.current.temp ?? 0)ºC"
+        temperatureLabel.text = forecastResponse?.current.temp.toCelsius()
+        humidityValueLabel.text = "\(forecastResponse?.current.humidity ?? 0)mm"
+        windValueLabel.text = "\(forecastResponse?.current.windSpeed ?? 0)km/h"
+        weatherIcon.image = UIImage(named: forecastResponse?.current.weather.first?.icon ?? "")
+        
+        if forecastResponse?.current.dt.isDayTime() ?? true {
+            backgroundView.image = UIImage(named: "background-day")
+        } else {
+            backgroundView.image = UIImage(named: "background-night")
+        }
+        
+        previsaoCollectionView.reloadData()
+        dailyForecastTableView.reloadData()
     }
     
     private func setupView() {
+        view.backgroundColor = .white
         setHierarchy()
         setConstraints()
     }
@@ -245,6 +259,7 @@ class ViewController: UIViewController {
             cityLabel.heightAnchor.constraint(equalToConstant: 20),
             temperatureLabel.topAnchor.constraint(equalTo: cityLabel.bottomAnchor, constant: 12),
             temperatureLabel.leadingAnchor.constraint(equalTo: headerView.leadingAnchor, constant: 18),
+            temperatureLabel.heightAnchor.constraint(equalToConstant: 71),
             weatherIcon.heightAnchor.constraint(equalToConstant: 86),
             weatherIcon.widthAnchor.constraint(equalToConstant: 86),
             weatherIcon.trailingAnchor.constraint(equalTo: headerView.trailingAnchor, constant: -18),
@@ -282,26 +297,38 @@ class ViewController: UIViewController {
 
 extension ViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        forecastResponse?.hourly.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: previsaoCollectionViewCell.indentifier, for: indexPath)
+        guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: previsaoCollectionViewCell.indentifier, for: indexPath) as? previsaoCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        
+        let forecast = forecastResponse?.hourly[indexPath.row]
+        cell.loadData(time: forecast?.dt.toHourFormat(), icon: UIImage(named: forecast?.weather.first?.icon ?? ""), temp: forecast?.temp.toCelsius())
         
         return cell
     }
 }
 
-extension ViewController: UITableViewDataSource {
+extension ViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 10
-    }	
+        forecastResponse?.daily.count ?? 0
+    }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: DailyForecastTableViewCell.identifier, for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: DailyForecastTableViewCell.identifier, for: indexPath) as? DailyForecastTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        let forecast = forecastResponse?.daily[indexPath.row]
+        cell.loadData(weekDay: forecast?.dt.toWeekdayName().uppercased(), min: forecast?.temp.min.toCelsius(), max: forecast?.temp.max.toCelsius(), icon: UIImage(named: forecast?.weather.first?.icon ?? ""))
         
         return cell
     }
     
-
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        60
+    }
 }

@@ -65,6 +65,13 @@ class previsaoCollectionViewCell: UICollectionViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
+    func loadData(time: String?, icon: UIImage?, temp: String?) {
+        hourLabel.text = time
+        iconImageView.image = icon
+        
+        temperatureLabel.text = temp
+    }
+    
     private func setupView() {
         setHierarchy()
         setConstraints()
