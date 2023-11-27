@@ -1,4 +1,4 @@
-# [iOS com SwiftUI: construindo componentes e layouts - App ChefDelivery](https://cursos.alura.com.br/course/ios-swiftui-construindo-componentes-layouts)
+# [iOS com SwiftUI: construindo componentes e layouts - App ChefDelivery](https://cursos.alura.com.br/course/ios-swiftui-navegacao-gerenciamento-estados)
 
 Aula 1 - Navegação entre telas
 
