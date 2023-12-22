@@ -1,20 +1,19 @@
-# [iOS com SwiftUI: construindo componentes e layouts - App ChefDelivery](https://cursos.alura.com.br/course/ios-swiftui-navegacao-gerenciamento-estados)
+# [iOS com SwiftUI: trabalhando com animações e DragGesture](https://cursos.alura.com.br/course/ios-swiftui-trabalhando-animacoes-draggesture)
 
-Aula 1 - Navegação entre telas
+Aula 1 - Primeiros passos com animações
 
-Aula 2 - Construindo tela de restaurante
+Aula 2 - Implementando DragGesture na imagem
 
-Aula 3 - Construindo tela de detalhes do produto
+Aula 3 - Construindo um botão customizado
 
-Aula 4 - Implementando filtros
-
-Aula 5 - Extraindo Views (Refatorando projeto)
+Aula 4 - Aprimorando o carrossel de imagens
 
 ## Observações
 
 Na prévia abaixo é possível ver o funcionamento do app
 
 # Prévia do projeto
+![Prévia do projeto](appTelaInicial.png)
 ![Prévia do projeto](app1.png)
 ![Prévia do projeto](app2.png)
 ![Prévia do projeto](app3.png)
