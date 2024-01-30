@@ -2,9 +2,9 @@
 
 Aula 1 - Requisição HTTP com Apiary
 
-Aula 2 - 
+Aula 2 - Requisição com URLSession
 
-Aula 3 - 
+Aula 3 - Métodos assíncronos
 
 Aula 4 - 
 
@@ -12,7 +12,7 @@ Aula 5 -
 
 ## Observações
 
-Último curso que deixa de usar mocks e faz requisições ao servidor para receber os dados
+Último curso que deixa de usar mocks e faz requisições ao servidor (utlizando Apiary) para receber os dados
 
 Na prévia abaixo é possível ver o funcionamento do app
 
