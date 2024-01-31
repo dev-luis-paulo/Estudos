@@ -10,7 +10,9 @@ import SwiftUI
 struct ProductDetailView: View {
     
     let product: ProductType
-    @State var productQuantity = 1
+    @State private var productQuantity = 1
+    @State private var showAlert = false
+    @State private var alertMessage = ""
     
     var service = HomeService()
     
@@ -24,11 +26,12 @@ struct ProductDetailView: View {
         
         Spacer()
         
-        Button {
+        Button(action:  {
             Task {
                 await confirmOrder()
+                showAlert = true
             }
-        } label: {
+        }) {
             HStack{
                 Image(systemName: "cart")
                 
@@ -43,6 +46,9 @@ struct ProductDetailView: View {
             .cornerRadius(32)
             .shadow(color: Color("ColorRedDark").opacity(0.5), radius: 10)
         }
+        .alert(isPresented: $showAlert) {
+            Alert(title: Text(alertMessage), message: nil, dismissButton: .default(Text("Close")))
+        }
     }
     
     func confirmOrder() async {
@@ -51,13 +57,19 @@ struct ProductDetailView: View {
             switch result {
             case .success(let message):
                 print(message)
+                showAlert = true
+                alertMessage = "Pedido enviado com sucesso"
             case .failure(let error):
                 print(error.localizedDescription)
+                showAlert = true
+                alertMessage = "Erro ao enviar pedido."
             }
         } catch {
             print(error.localizedDescription)
+            showAlert = true
+            alertMessage = "Erro ao enviar pedido."
         }
-        
+        	
     }
 }
 
