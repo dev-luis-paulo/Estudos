@@ -14,23 +14,24 @@ Aula 6 -
 
 ## Instalações
 
-[Projeto Inicial] (https://github.com/alura-cursos/swiftui-vollmed-crud/archive/refs/heads/projeto-inicial.zip)
+Baixar [Projeto Inicial](https://github.com/alura-cursos/swiftui-vollmed-crud/archive/refs/heads/projeto-inicial.zip)
 
-[NodeJS](https://nodejs.org/)
+Baixar [NodeJS](https://nodejs.org/)
 
     1. npm install ts-node@latest --save-dev
     2. npm update
     
-Utilizar npm install e npm start na [API](https://github.com/alura-cursos/vollmed-api-swiftui/archive/refs/heads/main.zip)
+Baixar [API](https://github.com/alura-cursos/vollmed-api-swiftui/archive/refs/heads/main.zip) e utilizar os seguintes comandos:
 
     1. Em package.json trocar a linha de start por: "start": "node -r ts-node/register ./src/server.ts",
-
+    2. npm install 
+    3. npm start
     
-[Insomnia](https://insomnia.rest/download/)
+Baixar [Insomnia](https://insomnia.rest/download/)
 
-Utilizar este arquivo JSON no Insomnia: [Baixar Arquivo](https://github.com/alura-cursos/vollmed-api-swiftui/blob/main/Vollmed-CRUD.json)
+Baixar [Json](https://github.com/alura-cursos/vollmed-api-swiftui/blob/main/Vollmed-CRUD.json) e importar no Insomnia
 
-## Observações
+## Informações do curso
 
 Aplicativo em que usuários podem visualizar, agendar, reagendar e desmarcar consultas médicas
 
@@ -49,6 +50,12 @@ Integração da aplicação a uma API Restful e lidando com respostas JSON
 TabView para deixar o aplicativo mais dinâmico
 
 Compreender o uso de variáveis de estado para atualizar dinamicamente os dados da aplicação
+
+## Observações
+
+O projeto inicial foi desenvolvido pela instrutora Giovanna Moeller da Alura, o intuito foi de aprender conceitos e práticas sobre o CRUD e utilização de API REST
+
+Abaixo é possível visualizar alguns imagens do projeto
 
 # Prévia do projeto
 
