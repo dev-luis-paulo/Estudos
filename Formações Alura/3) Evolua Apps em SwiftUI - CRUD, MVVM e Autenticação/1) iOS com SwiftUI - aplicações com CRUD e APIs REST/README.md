@@ -1,16 +1,16 @@
 # [iOS com SwiftUI: construindo aplicações interativas com CRUD e APIs REST](https://cursos.alura.com.br/course/ios-swiftui-aplicacoes-interativas-crud-apis-rest)
 
-Aula 1 - 
+Aula 1 - Projeto inicial e o Insomnia
 
-Aula 2 - 
+Aula 2 - Requisição GET e ASYNC/AWAIT
 
-Aula 3 - 
+Aula 3 - Layout da tela de agendamento
 
-Aula 4 - 
+Aula 4 - Requisição POST
 
-Aula 5 - 
+Aula 5 - Layout da tela de consultas
 
-Aula 6 - 
+Aula 6 - Requisições PATCH e DELETE
 
 ## Instalações
 
@@ -59,3 +59,10 @@ Abaixo é possível visualizar alguns imagens do projeto
 
 # Prévia do projeto
 
+![Prévia do projeto](app1.png)
+![Prévia do projeto](app2.png)
+![Prévia do projeto](app3.png)
+![Prévia do projeto](app4.png)
+![Prévia do projeto](app5.png)
+![Prévia do projeto](app6.png)
+![Prévia do projeto](app7.png)
