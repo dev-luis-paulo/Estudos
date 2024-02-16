@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "59269537-9D29-42FA-A490-34EE70701C43"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "0E78AAD2-C7CC-4D67-BBB5-FC4D4D86BB45"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Vollmed/Models/Specialist.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "30"
+            endingLineNumber = "30"
+            landmarkName = "unknown"
+            landmarkType = "0">
+            <Locations>
+               <Location
+                  uuid = "0E78AAD2-C7CC-4D67-BBB5-FC4D4D86BB45 - e8f4b57e2170ce69"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "one-time initialization function for specialists"
+                  moduleName = "Vollmed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luis/Desktop/programacao/Estudos/Formac%CC%A7o%CC%83es%20Alura/3)%20Evolua%20Apps%20em%20SwiftUI%20-%20CRUD,%20MVVM%20e%20Autenticac%CC%A7a%CC%83o/1)%20iOS%20com%20SwiftUI%20-%20aplicac%CC%A7o%CC%83es%20com%20CRUD%20e%20APIs%20REST/Voll%20Med/Vollmed/Models/Specialist.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "40">
+               </Location>
+               <Location
+                  uuid = "0E78AAD2-C7CC-4D67-BBB5-FC4D4D86BB45 - 7598f274ec4efd3c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Vollmed.specialists.unsafeMutableAddressor : Swift.Array&lt;Vollmed.Specialist&gt;"
+                  moduleName = "Vollmed"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/luis/Desktop/programacao/Estudos/Formac%CC%A7o%CC%83es%20Alura/3)%20Evolua%20Apps%20em%20SwiftUI%20-%20CRUD,%20MVVM%20e%20Autenticac%CC%A7a%CC%83o/1)%20iOS%20com%20SwiftUI%20-%20aplicac%CC%A7o%CC%83es%20com%20CRUD%20e%20APIs%20REST/Voll%20Med/Vollmed/Models/Specialist.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "30"
+                  endingLineNumber = "30"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
