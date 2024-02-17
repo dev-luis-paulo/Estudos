@@ -19,6 +19,7 @@ struct insertFieldView: View {
     var body: some View {
         if secure == false {
             TextField(placeholder, text: $text)
+                .textContentType(nil)
                 .padding(14)
                 .background(Color.gray.opacity(0.25))
                 .cornerRadius(14.0)
