@@ -10,6 +10,7 @@ import SwiftUI
 struct ScheduleAppointmentView: View {
     
     let service = WebService()
+    var authManager = AuthenticationManager.shared
     
     var specialistID: String
     var isRescheduleView: Bool
@@ -47,9 +48,7 @@ struct ScheduleAppointmentView: View {
     let today = Date()
     
     func scheduleAppointment() async {
-        guard let patientID = UserDefaultsHelper.get(for: "patient-id") else {
-            return
-        }
+        guard let patientID = authManager.patientID else { return }
         
         do {
             if let _ = try await service.scheduleAppointment(specialistID: specialistID, patientID: patientID, date: selectedDate.convertToString()) {

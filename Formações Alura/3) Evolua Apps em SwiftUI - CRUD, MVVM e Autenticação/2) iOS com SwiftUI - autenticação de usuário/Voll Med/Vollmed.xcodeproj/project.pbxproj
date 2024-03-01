@@ -24,6 +24,8 @@
 		A045752D2B74708100EB30F8 /* Date+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A045752C2B74708100EB30F8 /* Date+.swift */; };
 		A045752F2B7471FF00EB30F8 /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = A045752E2B7471FF00EB30F8 /* String+.swift */; };
 		A04575312B7474A900EB30F8 /* ScheduleAppointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04575302B7474A900EB30F8 /* ScheduleAppointment.swift */; };
+		A08887272B91669B008150A8 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = A08887262B91669B008150A8 /* KeychainHelper.swift */; };
+		A088872C2B916C46008150A8 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A088872B2B916C46008150A8 /* AuthenticationManager.swift */; };
 		A0B84E2D2B81603C0006645A /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B84E2C2B81603C0006645A /* Login.swift */; };
 		A0E1C0472B803D2400238FC2 /* Patient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0E1C0462B803D2400238FC2 /* Patient.swift */; };
 		A0F7AC422B7EDA2100D067CE /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F7AC412B7EDA2100D067CE /* SignInView.swift */; };
@@ -51,6 +53,8 @@
 		A045752C2B74708100EB30F8 /* Date+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+.swift"; sourceTree = "<group>"; };
 		A045752E2B7471FF00EB30F8 /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
 		A04575302B7474A900EB30F8 /* ScheduleAppointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleAppointment.swift; sourceTree = "<group>"; };
+		A08887262B91669B008150A8 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		A088872B2B916C46008150A8 /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		A0B84E2C2B81603C0006645A /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		A0E1C0462B803D2400238FC2 /* Patient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Patient.swift; sourceTree = "<group>"; };
 		A0F7AC412B7EDA2100D067CE /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
@@ -112,6 +116,7 @@
 			children = (
 				484BEEFE2AB0F59D0033C07A /* WebService.swift */,
 				A035BC702B84152200547593 /* UserDefaultsHelper.swift */,
+				A08887262B91669B008150A8 /* KeychainHelper.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -135,6 +140,7 @@
 		48539DEB2AB0F47C005BD7C9 /* Vollmed */ = {
 			isa = PBXGroup;
 			children = (
+				A08887282B916C06008150A8 /* Managers */,
 				A045752B2B74707200EB30F8 /* Extensions */,
 				484BEEFB2AB0F56C0033C07A /* Services */,
 				484BEEFA2AB0F5680033C07A /* Models */,
@@ -162,6 +168,14 @@
 				A045752E2B7471FF00EB30F8 /* String+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A08887282B916C06008150A8 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A088872B2B916C46008150A8 /* AuthenticationManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,6 +253,7 @@
 				A00B6CD22B786168008DC9D9 /* Appointment.swift in Sources */,
 				A045752D2B74708100EB30F8 /* Date+.swift in Sources */,
 				A04575312B7474A900EB30F8 /* ScheduleAppointment.swift in Sources */,
+				A08887272B91669B008150A8 /* KeychainHelper.swift in Sources */,
 				48539DEF2AB0F47C005BD7C9 /* ContentView.swift in Sources */,
 				A045752F2B7471FF00EB30F8 /* String+.swift in Sources */,
 				484BEF052AB0F7970033C07A /* HomeView.swift in Sources */,
@@ -254,6 +269,7 @@
 				A0F7AC442B7EDD8300D067CE /* SignUpView.swift in Sources */,
 				48539DED2AB0F47C005BD7C9 /* VollmedApp.swift in Sources */,
 				A021F3A42B771189006AA1F3 /* MyAppointmentsView.swift in Sources */,
+				A088872C2B916C46008150A8 /* AuthenticationManager.swift in Sources */,
 				A045752A2B7465AB00EB30F8 /* ScheduleAppointmentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -53,6 +53,8 @@ Abaixo é possível visualizar alguns imagens do projeto
 
 # Prévia do projeto
 
+![Prévia do projeto](TelaLogin.png)
+![Prévia do projeto](TelaCadastro.png)
 ![Prévia do projeto](app1.png)
 ![Prévia do projeto](app2.png)
 ![Prévia do projeto](app3.png)

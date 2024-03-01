@@ -10,6 +10,7 @@ import UIKit
 struct WebService {
     
     private let baseURL = "http://localhost:3000"
+    var authManager = AuthenticationManager.shared
     
     private let imageCache = NSCache<NSString, UIImage>()
     
@@ -21,7 +22,7 @@ struct WebService {
             return false
         }
         
-        guard let token = UserDefaultsHelper.get(for: "token") else {
+        guard let token = authManager.token else {
             print("Token não informado!")
             return false
         }
@@ -93,7 +94,7 @@ struct WebService {
             return false
         }
         
-        guard let token = UserDefaultsHelper.get(for: "token") else {
+        guard let token = authManager.token else {
             print("Token não informado!")
             return false
         }
@@ -125,7 +126,7 @@ struct WebService {
             return nil
         }
         
-        guard let token = UserDefaultsHelper.get(for: "token") else {
+        guard let token = authManager.token else {
             print("Token não informado!")
             return nil
         }
@@ -155,7 +156,7 @@ struct WebService {
             return nil
         }
         
-        guard let token = UserDefaultsHelper.get(for: "token") else {
+        guard let token = authManager.token else {
             print("Token não informado!")
             return nil
         }
@@ -181,7 +182,7 @@ struct WebService {
             return nil
         }
         
-        guard let token = UserDefaultsHelper.get(for: "token") else {
+        guard let token = authManager.token else {
             print("Token não informado!")
             return nil
         }
